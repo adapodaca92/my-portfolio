@@ -2,39 +2,39 @@ const Portfolio = (function () {
   function makeWords() {
     var words = [
       {
-        text: "rapping",
+        text: 'rapping',
         weight: 12.3,
       },
       {
-        text: "css3",
+        text: 'css3',
         weight: 8,
       },
       {
-        text: "javascript",
+        text: 'javascript',
         weight: 14,
       },
       {
-        text: "jquery",
+        text: 'jquery',
         weight: 3,
       },
       {
-        text: "programming",
+        text: 'programming',
         weight: 7,
       },
       {
-        text: "python",
+        text: 'python',
         weight: 10,
       },
       {
-        text: "java",
+        text: 'java',
         weight: 9,
       },
       {
-        text: "qazi",
+        text: 'qazi',
         weight: 15,
       },
       {
-        text: "newText",
+        text: 'newText',
         weight: 7,
       },
     ];
@@ -42,12 +42,12 @@ const Portfolio = (function () {
   }
 
   function makeWordCloud(words) {
-    $(".teaching-domains").jQCloud(words, { delay: 120 });
+    $('.teaching-domains').jQCloud(words, { delay: 120 });
   }
 
   function displayWordCloud() {
     var count = 1;
-    $(window).on("scroll", function () {
+    $(window).on('scroll', function () {
       var y_scroll_pos = window.pageYOffset;
       var scroll_pos_test = 2700; // set to whatever you want it to be
       var words = makeWords();
@@ -59,25 +59,25 @@ const Portfolio = (function () {
   }
 
   function designForm() {
-    $("#my-modal form").addClass("my-form");
+    $('#my-modal form').addClass('my-form');
   }
 
   function typeAnimation() {
-    Typed.new("#writing-text", {
+    Typed.new('#writing-text', {
       strings: [
-        "am a Frontend Web Developer.",
-        "love everything about code.",
-        "solve problems.",
+        'am a Software Engineer.',
+        'love everything about code.',
+        'solve problems.',
       ],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
       typeSpeed: 1,
-      contentType: "text",
+      contentType: 'text',
       callback: function () {
-        $("#writing-text").css({
-          color: "#fff",
-          "background-color": "#C8412B",
+        $('#writing-text').css({
+          color: '#fff',
+          'background-color': '#C8412B',
         });
       },
       preStringTyped: function () {},
